@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title><?php bloginfo('name') ?></title>
 	<script src="http://use.edgefonts.net/josefin-slab.js"></script>
 	<script src="http://use.edgefonts.net/merriweather.js"></script>
@@ -17,7 +18,7 @@
 			</nav>
 		</header>
 		<section>
-			<img src="<?php bloginfo(stylesheet_directory); ?>/images/hero.jpg" />
+			<img src="<?php bloginfo(stylesheet_directory); ?>/images/hero.jpg" alt="Grayscale photo of a pile of oranges" />
 			<?php if(have_posts()) : while (have_posts()) : the_post(); ?>
 				<section>
 					<a href="<?php the_permalink() ?>"><h1><?php the_title_attribute(); ?></h1></a>
@@ -26,10 +27,10 @@
 			<?php endwhile; else : ?>
 				<p><?php _e('Sorry, no posts for you today.'); ?></p>
 			<?php endif; ?>
-			<section>
+<!--			<section>
 				<p>Pressed and Squeezed is a full-service WordPress shop. We create custom themes and CMSes for our clients.</p>
 				<p>We also make pancakes on the side. (And if you're really lucky, we'll make them with chocolate chips.)</p>
-			</section>
+			</section> -->
 		</section>
 		<footer>
 			<h1>Contact Us</h1>
