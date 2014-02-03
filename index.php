@@ -9,7 +9,7 @@
 </head>
 	<body>
 		<header>
-			<h1>Pressed and Squeezed</h1>
+			<h1><?php bloginfo('name') ?></h1>
 			<nav>
 				<ul>
 					<li>Home</li>
@@ -27,7 +27,7 @@
 			<?php endwhile; else : ?>
 				<p><?php _e('Sorry, no posts for you today.'); ?></p>
 			<?php endif; ?>
-<!--			<section>
+			<!-- <section>
 				<p>Pressed and Squeezed is a full-service WordPress shop. We create custom themes and CMSes for our clients.</p>
 				<p>We also make pancakes on the side. (And if you're really lucky, we'll make them with chocolate chips.)</p>
 			</section> -->
